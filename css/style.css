@@ -87,13 +87,13 @@ button {
 
 }
 
-.buttons>a>button {
+.yes {
     background-color: var(--color-pink);
     color: var(--color-white);
     
 }
 
-.buttons>button:last-child {
+.no {
     background-color: var(--color-light-grey);
     color: var(--color-grey);
 }
