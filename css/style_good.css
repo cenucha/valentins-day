@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Transforma Script";
+    src:
+        local("Transforma Script Regular"),
+        local("Transforma Script-Regular"),
+        url("../fonts/TransformaScript_Trial-Regular.woff2") format("woff2"),
+        url("../fonts/TransformaScript_Trial-Regular.woff") format("woff"),
+        url("../fonts/TransformaScript_Trial-Regular.eot") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-light-pink: #FC9DCB;
+    --color-pink: #C4077A;
+    --color-white: white;
+    --color-light-grey: #E1E1E1;
+    --color-grey: #7E7E7E;
+    --color-light-yellow: #F8F6F0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-light-pink);
+    font-family: 'Transforma Script', sans-serif;
+    padding: clamp(2rem, 0.5rem + 2.22vw, 3.75rem);
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-light-yellow);
+    border-radius: 30px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: clamp(2rem, 0.5rem + 2.22vw, 3.75rem);
+    padding-top: clamp(2rem, 0.5rem + 2.22vw, 3.75rem);
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.wrapper>img:nth-child(3), .wrapper>img:nth-child(4) {
+    position: absolute;
+    width: clamp(11.25rem, 1rem + 15vw, 18.75rem);
+}
+
+.wrapper>img:nth-child(3) {
+    left: 7%;
+    top: 50%;
+    transform: rotate(-25.11deg);
+}
+
+.wrapper>img:nth-child(4) {
+    left: 78%;
+    top: 10%;
+    transform: rotate(25.11deg);
+}
+
+.wrapper>img:nth-child(2) {
+    width: clamp(33.125rem, 1rem + 35.69vw, 37.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 0.5rem + 2.22vw, 4rem);
+    color: var(--color-light-pink);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: clamp(2rem, 0.5rem + 2.77vw, 4.5rem);
+    color: var(--color-pink);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 905px) {
+    .wrapper>img:nth-child(3), .wrapper>img:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 668px) {
+    .wrapper {
+        gap: 24px;
+    }
+    .wrapper>img:nth-child(2) {
+        width: clamp(15rem, 1rem + 75.5vw, 37.5rem);
+    }
+}
