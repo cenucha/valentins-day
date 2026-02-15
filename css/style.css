@@ -38,15 +38,15 @@ body {
     border-radius: 30px;
     text-align: center;
     width: 100%;
-    padding-bottom: clamp(2rem, 0.5rem + 2.22vw, 3.75rem);
-    padding-top: clamp(2rem, 0.5rem + 2.22vw, 3.75rem);
+    padding-bottom: clamp(2rem, 0.5rem + 1.66vw, 3.75rem);
+    padding-top: clamp(2rem, 0.5rem + 1.66vw, 3.75rem);
     padding-left: 24px;
     padding-right: 24px;
 }
 
 .wrapper>img:first-child {
-    width: clamp(33.81rem, 1rem + 36.38vw, 38.75rem);
-    margin-bottom: clamp(2rem, 1rem + 1.66vw, 3rem);
+    width: clamp(33.81rem, 1rem + 36.38vw, 36.25rem);
+    margin-bottom: clamp(1.75rem, 0.5rem + 1.66vw, 2.8rem);
 }
 
 .wrapper>img:nth-child(2), .wrapper>img:nth-child(3) {
@@ -69,7 +69,7 @@ body {
 h1 {
     font-size: clamp(1.5rem, 0.5rem + 3.88vw, 5rem);
     color: var(--color-light-pink);
-    margin-bottom: clamp(1.5rem, 1rem + 3.33vw, 3rem);
+    margin-bottom: clamp(1.5rem, 0.5rem + 1.25vw, 2.5rem);
 }
 
 span {
@@ -78,7 +78,7 @@ span {
 
 button {
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: clamp(1.5rem, 0.5rem + 2.22vw, 4rem);
+    font-size: clamp(1.5rem, 0.5rem + 1.66vw, 3rem);
     padding-top: clamp(0.625rem, 0.25rem + 0.83vw, 1.5rem);
     padding-bottom: clamp(0.625rem, 0.25rem + 0.83vw, 1.5rem);
     padding-left: clamp(2rem, 1rem + 6.11vw, 7.25rem);
